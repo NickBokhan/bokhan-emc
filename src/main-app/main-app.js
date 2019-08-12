@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import './main-app.css';
 
@@ -11,10 +12,18 @@ const MainApp = () => {
 
 
   return (
-    <div className="main-app">
-      <Header/>
-      <GroundingApp/>
-    </div>
+    <Router>
+      <div className="main-app">
+        < Header/>
+        <Route path='/' 
+               render={() => <h3>My name is Nick Bokhan</h3>} 
+               exact/>
+        <Route path='/grounding' component={GroundingApp} />
+        
+        
+      </div>
+    </Router>
+    
 
   )
 
