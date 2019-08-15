@@ -1,5 +1,6 @@
 {
   "editor.tabSize": 2,
   "editor.fontLigatures": true,
-  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, fira code"
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, fira code",
+  "editor.detectIndentation": false
 }
