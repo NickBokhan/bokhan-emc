@@ -5,59 +5,76 @@ import './grounding-app-nav.css';
 
 import NavItem from '../../nav-item';
 
-
+const groundingMenu = [
+  {
+    label: 'Soil',
+    link: '/soil',
+    className: 'nav-link'
+  },
+  {
+    label: 'Simple',
+    link: '/simple',
+    className: 'nav-link'
+  },
+  {
+    label: 'Raw',
+    link: '/raw',
+    className: 'nav-link'
+  },
+  {
+    label: 'Square',
+    link: '/square',
+    className: 'nav-link'
+  },
+  {
+    label: 'Custom',
+    link: '/custom',
+    className: 'nav-link'
+  },
+  {
+    label: 'Natural',
+    link: '/natural',
+    className: 'nav-link'
+  },
+  {
+    label: 'Cross section',
+    link: '/cross-section',
+    className: 'nav-link'
+  },
+  {
+    label: 'Mistakes',
+    link: '/mistakes',
+    className: 'nav-link'
+  }
+]
 
 export default class GroundingAppNav extends Component {
 
-  state = {
-    activeTab: 1
-  }
+  // state = {
+  //   className: 'nav-link',
+  //   prevEvent: ''
+  // }
 
-  onLinkClick = (e) => {
-    console.log(e.target);
-    e.target.className += " active";
-    this.setState({
-      activeTab: `${e.target.id}`
-    });
-  };
+  // onLinkClick = (e) => {
+  //   console.log(2, this.state.className);
+  //   this.setState({
+  //     prevEvent: e
+  //   });
+  //   console.log(3, this.state.className);
+  //   e.target.className = "nav-link active";
+
+  // };
+
   render() {
-    const { activeTab } = this.props;
-
-
-
 
     return (
 
       <div>
-        <ul className="nav nav-tabs">
-          <NavItem lebel='Soil'
-            classNames='nav-link'
-            linkClick={this.onLinkClick} />
+        
 
-          <NavItem lebel='Simple'
-            classNames='nav-link'
-            linkClick={this.onLinkClick} />
+          <NavItem items={groundingMenu} />
 
-          <NavItem lebel='Raw'
-            classNames='nav-link'
-            linkClick={this.onLinkClick} />
-
-          <NavItem lebel='Square'
-            classNames='nav-link'
-            linkClick={this.onLinkClick} />
-
-          <NavItem lebel='Custom'
-            classNames='nav-link'
-            linkClick={this.onLinkClick} />
-
-          <NavItem lebel='Cross Section'
-            classNames='nav-link'
-            linkClick={this.onLinkClick} />
-
-          <NavItem lebel='Mistakes'
-            classNames='nav-link'
-            linkClick={this.onLinkClick} />
-        </ul>
+        
       </div>
 
     )
