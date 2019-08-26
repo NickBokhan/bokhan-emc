@@ -1,3 +1,3 @@
-import GroundingApp from './grounding-app-nav';
+import GroundingApp from './grounding-app';
 
 export default GroundingApp;
