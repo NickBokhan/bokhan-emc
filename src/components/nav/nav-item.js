@@ -10,11 +10,12 @@ const NavItem = ( props ) => {
           props.items.map((item, index) =>
             <li className="nav-item" key={index}>
               <Link className={item.className}
-                //onClick={props.linkClick}
+              {...console.log(item.className)}
+                onClick={props.linkClick}
                 data-toggle="tab"
                 key={item.link}
-                //name={item.link}
-                to={`/grounding${item.link}`}
+                name={item.link}
+                to={`/grounding/${item.link}`}
               >
                 {item.label}
               </Link>
