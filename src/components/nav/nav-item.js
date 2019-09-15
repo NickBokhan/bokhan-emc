@@ -14,7 +14,7 @@ const NavItem = (props) => {
               data-toggle="tab"
               key={item.link}
               name={item.link}
-              to={`/grounding/${item.link}`}
+              to={`/${props.section}/${item.link}`}
             >
               {item.label}
             </Link>

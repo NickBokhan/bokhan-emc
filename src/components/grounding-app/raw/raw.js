@@ -1,10 +1,8 @@
 import React from 'react';
 
-import './simple.css';
-import Vertical from './vertical';
-import Horizontal from './horizontal';
+import RawData from './raw-data';
 
-const Simple = () => {
+const Raw = () => {
 
 
     return (
@@ -12,10 +10,7 @@ const Simple = () => {
           <div  className="tab-pane fade active show" id="simple">
             <div className='calculation-area d-flex'>
               <div className='calculation-container'>
-                <Vertical/>
-              </div>
-              <div className='calculation-container'>
-                <Horizontal/>
+                <RawData/>
               </div>
             </div>
           </div>
@@ -25,4 +20,4 @@ const Simple = () => {
 
 
 
-export default Simple;
+export default Raw;

@@ -2,13 +2,13 @@ import React from 'react';
 
 import NavBar from '../nav/nav-bar';
 
-const GroundingApp = () => {
+const EmcApp = () => {
 
   return (
     <div>
-      <NavBar page='grounding'/>
+      <NavBar page='emc'/>
     </div>
   )
 }
 
-export default GroundingApp;
+export default EmcApp;
